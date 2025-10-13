@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover MaxFood AB's private label solutions. Produce your own brand with our fresh and frozen product lines.">
+  <title>Private Label – MaxFood AB</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">MaxFood AB</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-key="nav_home"></a></li>
+          <li><a href="products.html" data-key="nav_products"></a></li>
+          <li><a href="private-label.html" data-key="nav_private_label"></a></li>
+          <li><a href="quality.html" data-key="nav_quality"></a></li>
+          <li><a href="about.html" data-key="nav_about"></a></li>
+          <li><a href="contact.html" data-key="nav_contact"></a></li>
+          <li><a href="login.html" data-key="nav_login"></a></li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+        <button data-lang="fr">FR</button>
+        <button data-lang="sv">SV</button>
+      </div>
+    </div>
+  </header>
+
+  <section style="padding-top:120px; text-align:center;">
+    <h2 data-key="private_label_title"></h2>
+    <p data-key="private_label_intro"></p>
+    <div style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin-top:40px;">
+      <div class="card" style="background: var(--card-bg); backdrop-filter: blur(var(--card-blur)); border-radius: var(--border-radius); padding:20px; width:260px;">
+        <h3 data-key="private_label_step1"></h3>
+        <p>Select from our range of fresh, frozen, halal and plant‑based products.</p>
+      </div>
+      <div class="card" style="background: var(--card-bg); backdrop-filter: blur(var(--card-blur)); border-radius: var(--border-radius); padding:20px; width:260px;">
+        <h3 data-key="private_label_step2"></h3>
+        <p>Upload your logo and specify the language for your label.</p>
+      </div>
+      <div class="card" style="background: var(--card-bg); backdrop-filter: blur(var(--card-blur)); border-radius: var(--border-radius); padding:20px; width:260px;">
+        <h3 data-key="private_label_step3"></h3>
+        <p>We’ll send a label design for your approval.</p>
+      </div>
+      <div class="card" style="background: var(--card-bg); backdrop-filter: blur(var(--card-blur)); border-radius: var(--border-radius); padding:20px; width:260px;">
+        <h3 data-key="private_label_step4"></h3>
+        <p>After approval, we produce and deliver your products.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:60px; max-width:600px; margin-left:auto; margin-right:auto; text-align:left; background: var(--card-bg); backdrop-filter: blur(var(--card-blur)); padding:30px; border-radius: var(--border-radius);">
+      <h3 data-key="private_label_cta" style="text-align:center;"></h3>
+      <form>
+        <div style="margin-bottom:15px;">
+          <label for="pl-product">Product:</label><br>
+          <select id="pl-product" style="width:100%; padding:8px; border-radius:5px;">
+            <option value="meatballs">Swedish Meatballs</option>
+            <option value="vegan_burger">Vegan Burger</option>
+            <option value="chickpea_falafel">Chickpea Falafel</option>
+            <option value="yellow_pea_falafel">Yellow Pea Falafel</option>
+            <option value="halal_beef_burger">Halal Beef Burger</option>
+          </select>
+        </div>
+        <div style="margin-bottom:15px;">
+          <label for="pl-logo">Logo (PNG/JPG):</label><br>
+          <input type="file" id="pl-logo" accept="image/*" style="width:100%; padding:8px; border-radius:5px;">
+        </div>
+        <div style="margin-bottom:15px;">
+          <label for="pl-language">Label Language:</label><br>
+          <select id="pl-language" style="width:100%; padding:8px; border-radius:5px;">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="sv">Svenska</option>
+          </select>
+        </div>
+        <div style="margin-bottom:15px;">
+          <label for="pl-company" data-key="contact_company"></label><br>
+          <input type="text" id="pl-company" data-placeholder="contact_company" style="width:100%; padding:8px; border-radius:5px;">
+        </div>
+        <div style="margin-bottom:15px;">
+          <label for="pl-email" data-key="contact_email"></label><br>
+          <input type="email" id="pl-email" data-placeholder="contact_email" style="width:100%; padding:8px; border-radius:5px;">
+        </div>
+        <div style="margin-bottom:15px;">
+          <label for="pl-message" data-key="contact_message"></label><br>
+          <textarea id="pl-message" rows="4" data-placeholder="contact_message" style="width:100%; padding:8px; border-radius:5px;"></textarea>
+        </div>
+        <button type="submit" style="width:100%; padding:10px; background: var(--primary); color: var(--bg); border:none; border-radius:5px; font-weight:600; cursor:pointer;" data-key="contact_submit"></button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html" data-key="nav_home"></a>
+      <a href="products.html" data-key="nav_products"></a>
+      <a href="private-label.html" data-key="nav_private_label"></a>
+      <a href="about.html" data-key="nav_about"></a>
+      <a href="contact.html" data-key="nav_contact"></a>
+    </div>
+    <div class="social-links">
+      <a href="#" title="LinkedIn">LI</a>
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="YouTube">YT</a>
+    </div>
+    <div class="copyright">
+      © 2025 MaxFood AB — Made in Sweden. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

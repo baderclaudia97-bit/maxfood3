@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login – MaxFood AB</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">MaxFood AB</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-key="nav_home"></a></li>
+          <li><a href="products.html" data-key="nav_products"></a></li>
+          <li><a href="private-label.html" data-key="nav_private_label"></a></li>
+          <li><a href="quality.html" data-key="nav_quality"></a></li>
+          <li><a href="about.html" data-key="nav_about"></a></li>
+          <li><a href="contact.html" data-key="nav_contact"></a></li>
+          <li><a href="login.html" data-key="nav_login"></a></li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+        <button data-lang="fr">FR</button>
+        <button data-lang="sv">SV</button>
+      </div>
+    </div>
+  </header>
+  <section style="padding-top:120px; text-align:center;">
+    <h2 data-key="nav_login"></h2>
+    <div style="max-width:400px; margin:0 auto; background: var(--card-bg); backdrop-filter: blur(var(--card-blur)); padding:30px; border-radius: var(--border-radius);">
+      <div id="login-form">
+        <form>
+          <div style="margin-bottom:15px; text-align:left;">
+            <label for="login-email" data-key="contact_email"></label><br>
+            <input type="email" id="login-email" data-placeholder="contact_email" style="width:100%; padding:8px; border-radius:5px;">
+          </div>
+          <div style="margin-bottom:15px; text-align:left;">
+            <label for="login-password">Password</label><br>
+            <input type="password" id="login-password" placeholder="Password" style="width:100%; padding:8px; border-radius:5px;">
+          </div>
+          <button type="submit" style="width:100%; padding:10px; background: var(--primary); color: var(--bg); border:none; border-radius:5px; font-weight:600; cursor:pointer;">Login</button>
+        </form>
+        <p style="margin-top:15px; font-size:0.9rem;">Don't have an account? <a href="#" id="show-register">Register</a></p>
+      </div>
+      <div id="register-form" style="display:none;">
+      	<form>
+      	  <div style="margin-bottom:15px; text-align:left;">
+      	    <label for="reg-company" data-key="contact_company"></label><br>
+      	    <input type="text" id="reg-company" data-placeholder="contact_company" style="width:100%; padding:8px; border-radius:5px;">
+      	  </div>
+      	  <div style="margin-bottom:15px; text-align:left;">
+      	    <label for="reg-email" data-key="contact_email"></label><br>
+      	    <input type="email" id="reg-email" data-placeholder="contact_email" style="width:100%; padding:8px; border-radius:5px;">
+      	  </div>
+      	  <div style="margin-bottom:15px; text-align:left;">
+      	    <label for="reg-password">Password</label><br>
+      	    <input type="password" id="reg-password" placeholder="Password" style="width:100%; padding:8px; border-radius:5px;">
+      	  </div>
+      	  <div style="margin-bottom:15px; text-align:left;">
+      	    <label for="reg-confirm">Confirm Password</label><br>
+      	    <input type="password" id="reg-confirm" placeholder="Confirm Password" style="width:100%; padding:8px; border-radius:5px;">
+      	  </div>
+      	  <button type="submit" style="width:100%; padding:10px; background: var(--primary); color: var(--bg); border:none; border-radius:5px; font-weight:600; cursor:pointer;">Register</button>
+      	</form>
+      	<p style="margin-top:15px; font-size:0.9rem;">Already have an account? <a href="#" id="show-login">Login</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-links">
+      <a href="index.html" data-key="nav_home"></a>
+      <a href="products.html" data-key="nav_products"></a>
+      <a href="private-label.html" data-key="nav_private_label"></a>
+      <a href="about.html" data-key="nav_about"></a>
+      <a href="contact.html" data-key="nav_contact"></a>
+    </div>
+    <div class="social-links">
+      <a href="#" title="LinkedIn">LI</a>
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="YouTube">YT</a>
+    </div>
+    <div class="copyright">
+      © 2025 MaxFood AB — Made in Sweden. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // Toggle between login and register forms
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginForm = document.getElementById('login-form');
+      const registerForm = document.getElementById('register-form');
+      const showRegister = document.getElementById('show-register');
+      const showLogin = document.getElementById('show-login');
+      showRegister.addEventListener('click', function(e) {
+        e.preventDefault();
+        loginForm.style.display = 'none';
+        registerForm.style.display = 'block';
+      });
+      showLogin.addEventListener('click', function(e) {
+        e.preventDefault();
+        registerForm.style.display = 'none';
+        loginForm.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>

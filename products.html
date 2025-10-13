@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the full catalogue of MaxFood AB products. Filter by line and format to find fresh, frozen, halal and plant‑based options for retail and food service.">
+  <title>Products – MaxFood AB</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">MaxFood AB</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-key="nav_home"></a></li>
+          <li><a href="products.html" data-key="nav_products"></a></li>
+          <li><a href="private-label.html" data-key="nav_private_label"></a></li>
+          <li><a href="quality.html" data-key="nav_quality"></a></li>
+          <li><a href="about.html" data-key="nav_about"></a></li>
+          <li><a href="contact.html" data-key="nav_contact"></a></li>
+          <li><a href="login.html" data-key="nav_login"></a></li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+        <button data-lang="fr">FR</button>
+        <button data-lang="sv">SV</button>
+      </div>
+    </div>
+  </header>
+
+  <section style="padding-top:120px;">
+    <h2 data-key="product_page_title" style="text-align:center;"></h2>
+    <!-- Filter bar -->
+    <div style="display:flex; justify-content:center; gap:20px; margin-bottom:20px; flex-wrap:wrap;">
+      <div>
+        <label for="filter-line" data-key="filter_line"></label>
+        <select id="filter-line" style="margin-left:10px; padding:5px; border-radius:5px;">
+          <option value="all">All</option>
+          <option value="fresh">Fresh</option>
+          <option value="frozen">Frozen</option>
+          <option value="halal">Halal</option>
+          <option value="plant">Plant-Based</option>
+        </select>
+      </div>
+      <div>
+        <label for="filter-format" data-key="filter_format"></label>
+        <select id="filter-format" style="margin-left:10px; padding:5px; border-radius:5px;">
+          <option value="all">All</option>
+          <option value="retail">Retail</option>
+          <option value="foodservice">Food Service</option>
+        </select>
+      </div>
+    </div>
+    <!-- Product grid -->
+    <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px;">
+      <div class="product-card" data-line="fresh" data-format="retail" onclick="window.location.href='product_meatballs.html'">
+        <img src="assets/products/meatballs.png" alt="Swedish Meatballs">
+        <h3>Swedish Meatballs</h3>
+        <p>Classic Swedish meatballs made from beef and pork.</p>
+      </div>
+      <div class="product-card" data-line="plant" data-format="retail" onclick="window.location.href='product_vegan_burger.html'">
+        <img src="assets/products/vegan_burger.png" alt="Vegan Burger">
+        <h3>Vegan Burger</h3>
+        <p>Delicious plant-based burger packed with protein.</p>
+      </div>
+      <div class="product-card" data-line="plant" data-format="retail" onclick="window.location.href='product_chickpea_falafel.html'">
+        <img src="assets/products/chickpea_falafel.png" alt="Chickpea Falafel">
+        <h3>Chickpea Falafel</h3>
+        <p>Authentic falafel made with chickpeas and spices.</p>
+      </div>
+      <div class="product-card" data-line="plant" data-format="retail" onclick="window.location.href='product_yellow_pea_falafel.html'">
+        <img src="assets/products/yellow_pea_falafel.png" alt="Yellow Pea Falafel">
+        <h3>Yellow Pea Falafel</h3>
+        <p>Falafel crafted from Swedish yellow peas for a unique taste.</p>
+      </div>
+      <div class="product-card" data-line="halal" data-format="retail" onclick="window.location.href='product_halal_beef_burger.html'">
+        <img src="assets/products/halal_beef_burger.png" alt="Halal Beef Burger">
+        <h3>Halal Beef Burger</h3>
+        <p>Juicy halal-certified beef burger for grill lovers.</p>
+      </div>
+
+      <!-- Newly added products from Google Drive -->
+      <div class="product-card" data-line="frozen" data-format="foodservice" onclick="window.location.href='product_gourmet_meatballs.html'">
+        <img src="assets/products/gourmet_meatballs.webp" alt="Gourmet Meatballs">
+        <h3>Gourmet Meatballs</h3>
+        <p>Premium meatballs with a rich flavour profile, ideal for food service menus.</p>
+      </div>
+      <div class="product-card" data-line="plant" data-format="retail" onclick="window.location.href='product_healthy_falafel.html'">
+        <img src="assets/products/healthy_falafel.webp" alt="Healthy Falafel – GlutenLactoseSoy Free">
+        <h3>Healthy Falafel</h3>
+        <p>Gluten‑, lactose‑ and soy‑free falafel made with wholesome ingredients.</p>
+      </div>
+      <div class="product-card" data-line="plant" data-format="retail" onclick="window.location.href='product_nordic_falafel.html'">
+        <img src="assets/products/nordic_falafel.webp" alt="Nordic Falafel – 82% Yellow Pea">
+        <h3>Nordic Falafel</h3>
+        <p>Falafel made from 82 % Swedish yellow peas for a Nordic twist.</p>
+      </div>
+      <div class="product-card" data-line="fresh" data-format="retail" onclick="window.location.href='product_swedish_classic_meatballs.html'">
+        <img src="assets/products/swedish_classic_meatballs.webp" alt="Swedish Classic Meatballs">
+        <h3>Swedish Classic Meatballs</h3>
+        <p>Traditional Swedish meatballs in a 400 g pack for easy meal prep.</p>
+      </div>
+      <div class="product-card" data-line="plant" data-format="foodservice" onclick="window.location.href='product_veggie_burger_deluxe.html'">
+        <img src="assets/products/veggie_burger_deluxe.webp" alt="Veggie Burger Deluxe">
+        <h3>Veggie Burger Deluxe</h3>
+        <p>1 kg pack of deluxe veggie burgers perfect for professional kitchens.</p>
+      </div>
+      <div class="product-card" data-line="plant" data-format="foodservice" onclick="window.location.href='product_traditional_falafel.html'">
+        <img src="assets/products/chickpea_falafel.png" alt="Traditional Falafel">
+        <h3>Traditional Falafel</h3>
+        <p>Hearty falafel in larger 800 g and 3 kg formats for catering and restaurants.</p>
+      </div>
+      <div class="product-card" data-line="plant" data-format="retail" onclick="window.location.href='product_veggie_smash_burger.html'">
+        <img src="assets/products/vegan_burger.png" alt="Veggie Smash Burger">
+        <h3>Veggie Smash Burger</h3>
+        <p>A 360 g pack of smash‑style veggie burgers — quick, tasty and plant‑based.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html" data-key="nav_home"></a>
+      <a href="products.html" data-key="nav_products"></a>
+      <a href="private-label.html" data-key="nav_private_label"></a>
+      <a href="about.html" data-key="nav_about"></a>
+      <a href="contact.html" data-key="nav_contact"></a>
+    </div>
+    <div class="social-links">
+      <a href="#" title="LinkedIn">LI</a>
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="YouTube">YT</a>
+    </div>
+    <div class="copyright">
+      © 2025 MaxFood AB — Made in Sweden. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

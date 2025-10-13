@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact MaxFood AB – get in touch for orders, quotes and general enquiries.">
+  <title>Contact – MaxFood AB</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">MaxFood AB</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-key="nav_home"></a></li>
+          <li><a href="products.html" data-key="nav_products"></a></li>
+          <li><a href="private-label.html" data-key="nav_private_label"></a></li>
+          <li><a href="quality.html" data-key="nav_quality"></a></li>
+          <li><a href="about.html" data-key="nav_about"></a></li>
+          <li><a href="contact.html" data-key="nav_contact"></a></li>
+          <li><a href="login.html" data-key="nav_login"></a></li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+        <button data-lang="fr">FR</button>
+        <button data-lang="sv">SV</button>
+      </div>
+    </div>
+  </header>
+  <section style="padding-top:120px;">
+    <h2 data-key="contact_title" style="text-align:center;"></h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px; margin-top:30px;">
+      <div style="flex:1; min-width:280px; max-width:400px;">
+        <h3>Contact Details</h3>
+        <p><strong>Address:</strong> Håbynvägen 6–12, 45831 Färgelanda, Sweden</p>
+        <p><strong>Email:</strong> <a href="mailto:info@maxfood.com">info@maxfood.com</a></p>
+        <p><strong>Phone:</strong> +46 735 079 602</p>
+      </div>
+      <div style="flex:1; min-width:280px; max-width:400px; background: var(--card-bg); backdrop-filter: blur(var(--card-blur)); padding:30px; border-radius: var(--border-radius);">
+        <h3 data-key="contact_form_title" style="margin-bottom:15px;"></h3>
+        <form>
+          <div style="margin-bottom:15px;">
+            <label for="c-name" data-key="contact_name"></label><br>
+            <input type="text" id="c-name" data-placeholder="contact_name" style="width:100%; padding:8px; border-radius:5px;">
+          </div>
+          <div style="margin-bottom:15px;">
+            <label for="c-company" data-key="contact_company"></label><br>
+            <input type="text" id="c-company" data-placeholder="contact_company" style="width:100%; padding:8px; border-radius:5px;">
+          </div>
+          <div style="margin-bottom:15px;">
+            <label for="c-email" data-key="contact_email"></label><br>
+            <input type="email" id="c-email" data-placeholder="contact_email" style="width:100%; padding:8px; border-radius:5px;">
+          </div>
+          <div style="margin-bottom:15px;">
+            <label for="c-country" data-key="contact_country"></label><br>
+            <input type="text" id="c-country" data-placeholder="contact_country" style="width:100%; padding:8px; border-radius:5px;">
+          </div>
+          <div style="margin-bottom:15px;">
+            <label for="c-message" data-key="contact_message"></label><br>
+            <textarea id="c-message" rows="4" data-placeholder="contact_message" style="width:100%; padding:8px; border-radius:5px;"></textarea>
+          </div>
+          <button type="submit" style="width:100%; padding:10px; background: var(--primary); color: var(--bg); border:none; border-radius:5px; font-weight:600; cursor:pointer;" data-key="contact_submit"></button>
+        </form>
+      </div>
+    </div>
+    <div style="margin-top:60px; text-align:center;">
+      <h3>Our Location</h3>
+      <p>Find us at our factory in Färgelanda, Sweden.</p>
+      <!-- Placeholder for map; real embedded maps require external API -->
+      <img src="assets/world_map.png" alt="Map" style="max-width:100%; height:auto; border-radius: var(--border-radius);" onerror="this.style.display='none'">
+    </div>
+  </section>
+  <footer>
+    <div class="footer-links">
+      <a href="index.html" data-key="nav_home"></a>
+      <a href="products.html" data-key="nav_products"></a>
+      <a href="private-label.html" data-key="nav_private_label"></a>
+      <a href="about.html" data-key="nav_about"></a>
+      <a href="contact.html" data-key="nav_contact"></a>
+    </div>
+    <div class="social-links">
+      <a href="#" title="LinkedIn">LI</a>
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="YouTube">YT</a>
+    </div>
+    <div class="copyright">
+      © 2025 MaxFood AB — Made in Sweden. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
