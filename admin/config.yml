@@ -3,9 +3,7 @@ backend:
   branch: main
 
 media_folder: "static/uploads"
-public_folder: "/uploads"
-
-site_url: "https://keen-sherbet-d2ced4.netlify.app"
+public_folder: "/static/uploads"
 
 collections:
   - name: "products"
@@ -14,25 +12,8 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Product Name", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Price", name: "price", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Category", name: "category", widget: "string"}
-
-  - name: "pages"
-    label: "Pages"
-    files:
-      - label: "About Us"
-        name: "about"
-        file: "about.html"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-
-      - label: "Contact"
-        name: "contact"
-        file: "contact.html"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "number", value_type: "float", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
